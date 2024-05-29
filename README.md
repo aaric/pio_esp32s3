@@ -2,16 +2,22 @@
 
 > ESP32-S3 Dev With PlatformIO.
 
-## `C:\Users\xxx\.platformio\penv\pip.conf`
+## 1 Config aliyun pip mirror
+
+&emsp;&emsp;~~`~\.platformio\penv\pip.conf`~~
 
 ```ini
 [global]
 user=no
 timeout=6000
-index-url = http://mirrors.aliyun.com/pypi/simple/
+index-url = https://mirrors.aliyun.com/pypi/simple/
 
 [install]
-use-mirrors = true
-mirrors = http://mirrors.aliyun.com/pypi/simple/
 trusted-host = mirrors.aliyun.com
+```
+
+## 2 Build this project
+
+```bash
+~\.platformio\penv\Scripts\pio run -t build
 ```
